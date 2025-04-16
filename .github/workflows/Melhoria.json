@@ -1,0 +1,20 @@
+[
+  {
+    "pattern": "(?i)exec\\.Command",
+    "description": "Uso de exec.Command pode ser explorado para execução arbitrária.",
+    "severity": 5,
+    "suggestion": "Valide entradas e use contextos seguros."
+  },
+  {
+    "pattern": "(?i)password\\s*=",
+    "description": "Credencial hardcoded detectada.",
+    "severity": 4,
+    "suggestion": "Use variáveis de ambiente ou cofres de segredo."
+  },
+  {
+    "pattern": "http://",
+    "description": "Conexão insegura detectada.",
+    "severity": 2,
+    "suggestion": "Prefira sempre https://"
+  }
+]
